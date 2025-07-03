@@ -1,0 +1,36 @@
+import pyautogui
+import time
+import pyperclip
+import os
+
+# --- CONFIGURATION ---
+contact_name = "Wife"  # Replace with your friend's name in WhatsApp
+message = "🌞 Good Day! Wishing you an awesome day ahead. Test Automation by RPA"
+browser_path = "chrome"  # Change to 'msedge' or 'firefox' if needed
+sleep_time = 8  # Time to wait for WhatsApp Web to fully load
+
+# --- STEP 1: Open WhatsApp Web in a NEW WINDOW ---
+os.system(f'start {browser_path} --new-window https://web.whatsapp.com')
+time.sleep(sleep_time)
+
+# --- STEP 2: Bring browser window into focus (click center of screen) ---
+pyautogui.click(x=600, y=400)  # Adjust x, y to center of your screen
+time.sleep(1)
+
+# --- STEP 3: Click on the Search Box ---
+pyautogui.click(x=287, y=253)  # Adjust this to match search bar position
+time.sleep(1)
+
+# --- STEP 4: Type Contact Name and Press Enter ---
+pyautogui.write(contact_name)
+time.sleep(2)
+pyautogui.press('enter')
+time.sleep(2)
+
+# --- STEP 5: Paste and Send Message ---
+pyperclip.copy(message)
+pyautogui.hotkey('ctrl', 'v')
+time.sleep(1)
+pyautogui.press('enter')
+
+print("✅ WhatsApp message sent successfully!")
