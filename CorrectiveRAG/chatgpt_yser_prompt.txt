@@ -1,0 +1,13 @@
+Act as an AI Expert with Python knowledge, give me the script for streamlit app to implement the system prompt for corrective RAG, take any simple usecase for example.
+
+Look at the below context to generate the code.
+ 
+PRACTICE_SCENARIO:   
+Query: {practice_query}   
+Retrieved Context: {practice_context}   
+Your Task:   
+1. Evaluate context quality using the 4 criteria   
+2. Decide if correction is needed   
+3. If correction needed, provide refined query   
+4. Generate final response with quality indicators   
+Evaluation:   - Relevance Score: ___   - Completeness Score: ___   - Accuracy Score: ___   - Specificity Score: ___   - Overall Quality: ___ - Action Needed: ___   "
