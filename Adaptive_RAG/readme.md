@@ -72,21 +72,3 @@ Your API key is not stored or logged.
 
 Entered key is used only during your session.
 
-📬 Feedback & Extensions
-Want to add support for .docx, .txt, or .csv?
-Or integrate this into a chatbot UI?
-
-Open an issue or contact the author!
-
-Made with ❤️ using LangChain and Streamlit
-
-
-
----
-
-Let me know if you'd like:
-- A GitHub badge-ready version
-- Screenshots / demo links
-- Export-to-Markdown code button in the app
-
-Ready to help!
